@@ -1,4 +1,4 @@
-import { backgroundImage, heroContent, heroImage } from "@/data/static-data";
+import { heroContent, heroImage } from "@/data/static-data";
 import Image from "next/image";
 import Typography from "./typography/typography";
 import Button from "./ui/button";
