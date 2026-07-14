@@ -5,7 +5,7 @@ import Button from "./ui/button";
 
 function NewsletterSection() {
   return (
-    <section className="flex flex-col justify-center items-center gap-8.75 mt-20 mx-auto">
+    <section className="max-w-292.5 w-full flex flex-col justify-center items-center gap-8.75 mt-20 mx-auto">
       <div className="flex flex-col justify-center items-center gap-8.75">
         <Image
           src={newsletterSectionContent.icon.src}

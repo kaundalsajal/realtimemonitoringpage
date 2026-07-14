@@ -6,7 +6,7 @@ import Button from "./ui/button";
 
 function FAQSection() {
   return (
-    <section className="flex flex-col gap-9 items-center justify-center px-10 sm:px-8 mx-auto mt-10">
+    <section className="max-w-292.5 w-full flex flex-col gap-9 items-center justify-center px-10 sm:px-8 mx-auto mt-10">
       <div className="relative w-15.5 aspect-square">
         <Image
           src={faqSectionContent.icon.src}
