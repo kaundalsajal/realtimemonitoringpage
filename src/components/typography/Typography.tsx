@@ -11,6 +11,7 @@ type Variant =
   | "body-lg"
   | "body"
   | "body-sm"
+  | "button"
   | "caption"
   | "overline";
 
@@ -46,7 +47,8 @@ const variantStyles: Record<Variant, string> = {
   body: "font-body text-[14px] sm:text-[16px] leading-[28px]",
   "body-sm": "font-body text-[12px] leading-[24px]",
 
-  caption: "font-poppins text-[12px] leading-[20px]",
+  button:"font-body text-[12px] sm:text-[14px] uppercase",
+  caption: "font-heading text-[12px] leading-[20px]",
   overline: "font-heading text-[12px] uppercase tracking-[0.1em]",
 };
 
@@ -79,6 +81,7 @@ const defaultTag: Record<Variant, ElementType> = {
   body: "p",
   "body-sm": "p",
 
+  button:"span",
   caption: "span",
   overline: "span",
 };

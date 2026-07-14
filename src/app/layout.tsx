@@ -29,7 +29,9 @@ export default function RootLayout({
       lang="en"
       className={`${dmSans.variable} ${urbanist.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col items-center">{children}</body>
+      <body className="relative min-h-full bg-[url(/background.png)] bg-no-repeat bg-center ">
+        {children}
+      </body>
     </html>
   );
 }

@@ -3,20 +3,26 @@ import clsx from "clsx";
 type Variant = "filled" | "outline"
 
 interface ButtonProps {
-  variant:Variant;
+  variant?:Variant;
   className?:string;
   children:React.ReactNode;
 }
 
-function Button({variant,className,children}:ButtonProps) {
+function Button({variant="filled",className,children}:ButtonProps) {
 
   const variantStyle = {
     filled: "",
-    outline: "border-[2px]"
+    outline: "border-[2px] border-white"
   }
 
   return (
-    <button className={clsx(className, "rounded-[5px]", variantStyle[variant])}>
+    <button
+      className={clsx(
+        className,
+        "rounded-[5px] hover:scale-110 transition-all duration-300 cursor-pointer",
+        variantStyle[variant],
+      )}
+    >
       {children}
     </button>
   );
