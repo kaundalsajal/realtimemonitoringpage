@@ -4,7 +4,7 @@ import Image from "next/image";
 function PartnerSection() {
   return (
     <section className="flex  w-full overflow-hidden px-10 sm:px-8 mt-10 mx-auto">
-      <div className="flex animate-marquee gap-25 items-center justify-center">
+      <div className="flex animate-marquee gap-10 md:gap-25 items-center justify-center">
         {partnerSectionImages.map((image, index) => (
           <Image
             key={index}
